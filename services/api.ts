@@ -8,8 +8,8 @@ export const TMBD_CONFIG = {
 }
 export const fetchMovies = async ({ query }: { query: string }) => {
 	const endpoint = query
-		? `discover/movie?query=${encodeURIComponent(query)}`
-		: `discover/movie?sort_by=popularity.desc`
+		? `${TMBD_CONFIG.BASE_URL}/search/movie?query=${encodeURIComponent(query)}`
+		: `${TMBD_CONFIG.BASE_URL}/discover/movie?sort_by=popularity.desc`
 	const response = await fetch(endpoint, {
 		method: 'GET',
 		headers: TMBD_CONFIG.headers,
