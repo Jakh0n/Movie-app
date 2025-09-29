@@ -22,7 +22,7 @@ const MovieCard = ({
 					className='w-full h-52 rounded-lg'
 					resizeMode='cover'
 				/>
-				<Text className='text-white text-sm line-clamp-2 mt-2'>{title}</Text>
+				<Text className='text-white text-sm line-clamp-1 mt-2'>{title}</Text>
 				<View className='flex-row items-center justify-start'>
 					<Image
 						source={icons.star}

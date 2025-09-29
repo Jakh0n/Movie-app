@@ -21,7 +21,7 @@ const Index = () => {
 		data: movies,
 		loading: moviesLoading,
 		error: moviesError,
-	} = useFetch(() => fetchMovies({ query: 'goodfellas' }), true)
+	} = useFetch(() => fetchMovies({ query: '' }), true)
 	return (
 		<View className='flex-1 bg-primary'>
 			<Image source={images.bg} className='w-full absolute z-0' />
